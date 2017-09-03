@@ -10,4 +10,14 @@ class TransportationMailer < ApplicationMailer
     )
   end
 
+  def notify_of_response(response, groom_email)
+    @response = response
+    @recipient = @response.recipient
+    mail(
+      to: groom_email,
+      from: "Corey & Alex <coreypsoinos@gmail.com>",
+      subject: "Someone responded to your email survey"
+    )
+  end
+
 end
