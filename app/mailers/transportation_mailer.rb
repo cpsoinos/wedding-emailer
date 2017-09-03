@@ -6,7 +6,7 @@ class TransportationMailer < ApplicationMailer
       to:       @recipient.email,
       from:     "Corey & Alex <coreypsoinos@gmail.com>",
       reply_to: "Corey & Alex <alex@wesleybrandt.com>",
-      subject:  "Do you need transportation?"
+      subject:  "Transportation for Alex & Corey's Big Day"
     )
   end
 
